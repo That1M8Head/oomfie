@@ -25,6 +25,7 @@ int main(int argc, char* argv[])
         if (!strcmp(argv[1], "--version"))
         {
             printf("oomfie version 1.2847-oomfie-1\n");
+            return EXIT_SUCCESS;
         }
         printf("searching for target %s\n", argv[1]);
         sleepy(2);
@@ -35,9 +36,11 @@ int main(int argc, char* argv[])
         printf("sending oomfie to target\n");
         sleepy(1);
         printf("oomfie success\n");
+        return EXIT_SUCCESS;
     }
     else
     {
         printf("oomfie\n");
+        return EXIT_SUCCESS;
     }
 }
