@@ -22,6 +22,10 @@ int main(int argc, char* argv[])
 {
     if (argc > 1)
     {
+        if (!strcmp(argv[1], "--version"))
+        {
+            printf("oomfie version 1.2847-oomfie-1\n");
+        }
         printf("searching for target %s\n", argv[1]);
         sleepy(2);
         printf("target found: oomfie locked on\n");
